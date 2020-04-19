@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>qrli.to | Free QR Code Generator and URL Shortner - Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36558746-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-36558746-4');
+</script>
+</head>
+
+<body>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="">
+      <p class="title is-1">qrli.to</p>
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
+    <a class="navbar-item">
+        Report URL
+      </a>
+      <a class="navbar-item" href="/privacy">
+        Privacy
+      </a>
+            <a class="navbar-item">
+        Contact
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+                    <p class="control">
+            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="" target="_blank" href="https://twitter.com/intent/tweet?text=qrlink.to: generate QR code and shorten links for free&amp;hashtags=qrcode&amp;url=https://qrli.to&amp;">
+              <span class="icon">
+                <i class="fab fa-twitter"></i>
+              </span>
+              <span>
+                Tweet
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+</nav>
+<div class="columns is-mobile is-centered">
+  <div class="column is-half">
+    <section class="section">
+        <div class="container">
+        <p class="bd-notification is-primary">
+            <h1 class="subtitle is-1">Type URL to generate QR code </h1>
+            <form method="POST" action="{{ url_for('short.add_link') }}">
+                <div class="columns">
+                <div class="column is-full">
+                <div class="field">
+
+                    <label class="label">Original URL</label>
+                    <div class="control">
+                        <input class="input" class="input is-medium" type="text" name="original_url" placeholder="https://www.youtube.com/watch?v=oHg5SJYRHA0">
+                    </div>
+
+                </div>
+                <div class="control" is-flex-desktop-only >
+                <button type="submit" class="button is-info">Generate QR Code & Shorten</button>
+                </div>  
+                </div>
+
+            </form>
+        </div>
+</div>
+</div>
+</div>
+
+    <section class="section">
+        <div class="container">
+            <p class="title is-5">URL Shortner & QR Code Generator</p>
+            <p><strong>qrli.to</strong> automatically generates a shorter link that redirects to your original URL and a QR code that points to the same shortned URL</p></br>
+            <p class="title is-5">Why use QR Codes?</p>
+            <p>QR Codes can store all time of text based data, from link to geographical coordinates and links. The key feature of QR codes is that the vast majority of modern mobile phones can read and process the codes.</p>
+        </div>
+    
+    </section>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+    Copyright ©<script>document.write(new Date().getFullYear());</script> <strong>qrli.to</strong> All rights reserved. 
+    </p>
+  </div>
+</footer>
+ 
+</body>
+
+</html>
