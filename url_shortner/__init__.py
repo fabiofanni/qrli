@@ -17,3 +17,4 @@ def create_app(config_file='settings.py'):
 
 
     return app
+

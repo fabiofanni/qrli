@@ -11,6 +11,7 @@ python-dotenv = "*"
 flask-sqlalchemy = "*"
 pyqrcode = "*"
 pyrcode = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.7"
